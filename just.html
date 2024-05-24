@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find photo</title>
+    <link rel="stylesheet" href="just.css">
+</head>
+<body>
+
+    <div id="pop-up">
+        <img src="/th2.jpg" alt="donkey">
+    </div>
+
+    <main id="main">
+        <h1 class="h1">Find your old photo</h1>
+    <h4 class="h4">Click here</h4>
+    <img src="download-removebg-preview (1).png" alt="" class="img">
+    
+    <button class="btn" id="btn">Find</button>
+    </main>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let popup = document.getElementById("pop-up");
+        let main = document.getElementById("main");
+
+        btn.onclick = () =>{
+            popup.style.display = "flex";
+        }
+
+        popup.onclick = () =>{
+            popup.style.display = "none";
+        }
+    </script>
+  
+</body>
+</html>
